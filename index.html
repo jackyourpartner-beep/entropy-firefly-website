@@ -6,6 +6,19 @@
   <meta name="description" content="Shenzhen Entropy Firefly - wholesale T-shirts, apparel OEM, ODM and private label manufacturing from China.">
   <title>Shenzhen Entropy Firefly | T-Shirts & Apparel OEM/ODM</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* 让上传的真实产品图能够完美自适应包裹框 */
+    .product-img img, .category img, .hero-art img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .product-img, .category .garment {
+      background: #f4f4f4 !important; /* 给图片加一个淡灰色背景垫底 */
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body>
 <header class="site-header">
@@ -39,7 +52,12 @@
         <a class="btn light" href="#contact">CONTACT US</a>
       </div>
     </div>
+    <!-- 【1. 顶部大横幅背景/插图替换区】 -->
     <div class="hero-art" aria-label="Apparel illustration">
+      <!-- 如果你想换成自己的大幅广告图，把下面这行前面的 <!-- 删掉，并把网址换掉即可 -->
+      <!-- <img src="这里放你在GitHub复制的横幅图片网址" alt="Banner"> -->
+      
+      <!-- 以下是原本画出来的模特（如果你用了上面的真实图片，可以把下面这三行删掉） -->
       <div class="person white-person"><div class="head"></div><div class="body shirt-white"></div></div>
       <div class="person black-person"><div class="head"></div><div class="body shirt-black"></div></div>
       <div class="city"></div>
@@ -50,6 +68,7 @@
 <section class="section" id="products">
   <div class="container">
     <div class="section-head"><div><h2>PRODUCT CATEGORIES</h2><p>Explore our range of T-shirt styles and apparel options.</p></div></div>
+    <!-- 【2. 产品大类图片替换区】 -->
     <div class="category-grid">
       <a class="category" href="#featured"><div class="garment basic"></div><b>BASIC T-SHIRTS</b><span>→</span></a>
       <a class="category" href="#featured"><div class="garment oversized"></div><b>OVERSIZED T-SHIRTS</b><span>→</span></a>
@@ -63,13 +82,77 @@
 <section class="section featured" id="featured">
   <div class="container">
     <div class="section-head"><div><h2>FEATURED PRODUCTS</h2><p>High quality fabrics, multiple colors, full customization options.</p></div><a href="#contact">View All Products →</a></div>
+    
+    <!-- 【3. 核心：6件特色产品图片替换区】 -->
     <div class="product-grid">
-      <article class="product"><div class="product-img tee black"></div><h3>Heavyweight Oversized T-Shirt</h3><p>240 GSM · 100% Cotton</p><small>MOQ: 100 pcs</small><a href="#contact">View Details →</a></article>
-      <article class="product"><div class="product-img tee white"></div><h3>Classic Fit T-Shirt</h3><p>180 GSM · 100% Cotton</p><small>MOQ: 100 pcs</small><a href="#contact">View Details →</a></article>
-      <article class="product"><div class="product-img tee washed"></div><h3>Vintage Washed T-Shirt</h3><p>220 GSM · 100% Cotton</p><small>MOQ: 100 pcs</small><a href="#contact">View Details →</a></article>
-      <article class="product"><div class="product-img polo sand"></div><h3>Polo Shirt</h3><p>200 GSM · 100% Cotton</p><small>MOQ: 100 pcs</small><a href="#contact">View Details →</a></article>
-      <article class="product"><div class="product-img long sage"></div><h3>Long Sleeve T-Shirt</h3><p>180 GSM · 100% Cotton</p><small>MOQ: 100 pcs</small><a href="#contact">View Details →</a></article>
-      <article class="product"><div class="product-img graphic"></div><h3>Custom Print T-Shirt</h3><p>180 GSM · 100% Cotton</p><small>MOQ: 100 pcs</small><a href="#contact">View Details →</a></article>
+      
+      <!-- 产品 1：Heavyweight Oversized T-Shirt -->
+      <article class="product">
+        <div class="product-img">
+          <!-- 💡 核心操作：把下面 src="" 双引号里面的网址，换成你复制的图片地址 -->
+          <img src="https://unsplash.com" alt="Heavyweight Oversized T-Shirt">
+        </div>
+        <h3>Heavyweight Oversized T-Shirt</h3>
+        <p>240 GSM · 100% Cotton</p>
+        <small>MOQ: 100 pcs</small>
+        <a href="#contact">View Details →</a>
+      </article>
+
+      <!-- 产品 2：Classic Fit T-Shirt -->
+      <article class="product">
+        <div class="product-img">
+          <img src="https://unsplash.com" alt="Classic Fit T-Shirt">
+        </div>
+        <h3>Classic Fit T-Shirt</h3>
+        <p>180 GSM · 100% Cotton</p>
+        <small>MOQ: 100 pcs</small>
+        <a href="#contact">View Details →</a>
+      </article>
+
+      <!-- 产品 3：Vintage Washed T-Shirt -->
+      <article class="product">
+        <div class="product-img">
+          <img src="https://unsplash.com" alt="Vintage Washed T-Shirt">
+        </div>
+        <h3>Vintage Washed T-Shirt</h3>
+        <p>220 GSM · 100% Cotton</p>
+        <small>MOQ: 100 pcs</small>
+        <a href="#contact">View Details →</a>
+      </article>
+
+      <!-- 产品 4：Polo Shirt -->
+      <article class="product">
+        <div class="product-img">
+          <img src="https://unsplash.com" alt="Polo Shirt">
+        </div>
+        <h3>Polo Shirt</h3>
+        <p>200 GSM · 100% Cotton</p>
+        <small>MOQ: 100 pcs</small>
+        <a href="#contact">View Details →</a>
+      </article>
+
+      <!-- 产品 5：Long Sleeve T-Shirt -->
+      <article class="product">
+        <div class="product-img">
+          <img src="https://unsplash.com" alt="Long Sleeve T-Shirt">
+        </div>
+        <h3>Long Sleeve T-Shirt</h3>
+        <p>180 GSM · 100% Cotton</p>
+        <small>MOQ: 100 pcs</small>
+        <a href="#contact">View Details →</a>
+      </article>
+
+      <!-- 产品 6：Custom Print T-Shirt -->
+      <article class="product">
+        <div class="product-img">
+          <img src="https://unsplash.com" alt="Custom Print T-Shirt">
+        </div>
+        <h3>Custom Print T-Shirt</h3>
+        <p>180 GSM · 100% Cotton</p>
+        <small>MOQ: 100 pcs</small>
+        <a href="#contact">View Details →</a>
+      </article>
+
     </div>
   </div>
 </section>
@@ -113,6 +196,7 @@
   <div class="container contact-grid">
     <div class="contact-copy"><p class="eyebrow">GET IN TOUCH</p><h2>LOOKING FOR T-SHIRTS<br>FOR YOUR BUSINESS?</h2><p>Tell us your requirements and we’ll get back to you within 24 hours.</p>
       <div class="contact-links">
+        <!-- 💡 记得把下面这两处的电话和邮箱改成你自己的 -->
         <a href="https://wa.me/8613800000000" target="_blank" rel="noopener">◉ WhatsApp<br><small>+86 138 0000 0000</small></a>
         <a href="mailto:info@entropyfirefly.com">✉ Email<br><small>info@entropyfirefly.com</small></a>
         <span>◉ WeChat<br><small>Scan to add</small></span>
@@ -121,14 +205,3 @@
     <form action="mailto:info@entropyfirefly.com" method="post" enctype="text/plain">
       <div class="form-row"><label>Name*<input name="Name" placeholder="Your name" required></label><label>Company*<input name="Company" placeholder="Your company" required></label><label>Country*<input name="Country" placeholder="Your country" required></label></div>
       <div class="form-row"><label>Email*<input type="email" name="Email" placeholder="Your email" required></label><label>WhatsApp<input name="WhatsApp" placeholder="Your WhatsApp number"></label><label>Interested Product<input name="Product" placeholder="e.g. T-shirt / Polo"></label></div>
-      <label>Message<textarea name="Message" placeholder="Tell us your requirements (fabric, color, quantity, etc.)" rows="4"></textarea></label>
-      <button class="btn dark" type="submit">SEND INQUIRY →</button>
-    </form>
-  </div>
-</section>
-</main>
-
-<footer><div class="container footer-grid"><div><strong>✣ SHENZHEN ENTROPY FIREFLY</strong><small>APPAREL SOURCING & MANUFACTURING</small></div><div class="footer-nav"><a href="#home">Home</a><a href="#products">T-Shirts</a><a href="#oem">OEM / ODM</a><a href="#process">Manufacturing</a><a href="#about">About Us</a><a href="#contact">Contact</a></div><div>f &nbsp; ◎ &nbsp; in &nbsp; ▶</div></div><div class="copyright">© 2026 Shenzhen Entropy Firefly. All rights reserved.</div></footer>
-<script src="script.js"></script>
-</body>
-</html>
